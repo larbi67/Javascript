@@ -21,7 +21,9 @@ The JavaScript Calculator operates as follows:
 
 **Example:**
 7 + 3 = 10
+
 5 * 6 = 30
+
 8 / 4 = 2
 
 In the provided JavaScript code, arithmetic operations are handled by the calculateResult() function. Here's how it works:
