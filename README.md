@@ -20,6 +20,7 @@ The JavaScript Calculator operates as follows:
 7. To clear the display, click the "C" button.
 
 **Example:**
+
 7 + 3 = 10
 
 5 * 6 = 30
