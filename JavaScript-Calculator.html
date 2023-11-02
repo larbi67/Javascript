@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculator - Version 1.0</title>
+    <title>Javascript Calculator - Version 1.0</title>
     <style>
         #calculator {
             width: 300px;
@@ -28,8 +28,8 @@
     </style>
 </head>
 <body>
-    <h1>Calculator</h1>
-    <p>Auteur: Ali</p>
+    <h1>Javascript Calculator</h1>
+    <p>Auteur: Larbi OUIYZME</p>
     <p>Version: 1.0</p>
     <div id="calculator">
         <input type="text" id="display" disabled>
@@ -56,18 +56,22 @@
     </div>
 
     <script>
-        function addToDisplay(value) {
+        // This function is used to add the specified 'value' to the display.
+		function addToDisplay(value) {
             document.getElementById('display').value += value;
         }
-
+        // This function clears the display by setting its value to an empty string.
         function clearDisplay() {
             document.getElementById('display').value = '';
         }
-
+        // This function calculates the result of the expression in the display using the 'eval' function.
+        // It handles errors and displays 'Error' if the expression is invalid.
         function calculateResult() {
             try {
+			    // Evaluate the expression in the display and update the display with the result.
                 document.getElementById('display').value = eval(document.getElementById('display').value);
             } catch (error) {
+			    // If an error occurs during evaluation, display 'Error' on the display.
                 document.getElementById('display').value = 'Error';
             }
         }
